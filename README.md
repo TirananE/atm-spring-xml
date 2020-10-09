@@ -1,4 +1,6 @@
-# ATM Example
+# ATM Code Config
 
-Dependency injection with a layer of indirection.
+Dependency injection with Configuration class.
+
+Author: Tiranan Emson
 
