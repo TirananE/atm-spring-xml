@@ -1,15 +1,11 @@
 package atm;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-@Component
 public class DataSourceFile implements DataSource {
 
     private String filename;
@@ -17,7 +13,7 @@ public class DataSourceFile implements DataSource {
     /**
      * @param filename the name of the customer file
      */
-    public DataSourceFile(@Value("${filename}") String filename) {
+    public DataSourceFile(String filename) {
         this.filename = filename;
     }
 
@@ -33,7 +29,7 @@ public class DataSourceFile implements DataSource {
         try {
             in = new Scanner(new FileReader(filename));
         } catch (FileNotFoundException e) {
-            System.err.println("Problem reading a customer file: "+filename);
+            System.err.println("Problem reading a customer file: "+ filename);
             return customers;
         }
 

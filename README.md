@@ -1,6 +1,6 @@
-# ATM Annotation-Based
+# ATM XML-Based
 
-Dependency Injection with Annotation Config.
+Dependency Injection with XML-Based Config.
 
 Author: Tiranan Emson
 
