@@ -1,6 +1,6 @@
-# ATM Code Config
+# ATM Annotation-Based
 
-Dependency injection with Configuration class.
+Dependency Injection with Annotation Config.
 
 Author: Tiranan Emson
 
